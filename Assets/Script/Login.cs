@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Login : MonoBehaviour {
 	public Button btnLogin;
+	public GameObject soundBackground;
 
 	// Use this for initialization
 	void Start () {
-		
+		DontDestroyOnLoad (soundBackground);
 	}
 
 	void Awake() {
